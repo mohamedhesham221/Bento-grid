@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <title>Frontend Mentor | Bento grid</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+    * {
+      font-family: "DM Sans", serif;
+      font-optical-sizing: auto;
+      font-weight: 600;
+      font-style: normal;
+    }
+
+    .DM-italic {
+      font-style: italic;
+    }
+
+    .purple-100 {
+      background-color: hsl(254, 88%, 90%);
+    }
+
+    .purple-500 {
+      background-color: hsl(256, 67%, 59%);
+    }
+
+    .yellow-100 {
+      background-color: hsl(31, 66%, 93%);
+    }
+
+    .yellow-500 {
+      background-color: hsl(39, 100%, 71%);
+    }
+
+    .txt-yellow-500 {
+      color: hsl(39, 100%, 71%);
+    }
+
+    .black-color {
+      color: hsl(0, 0%, 7%);
+    }
+  </style>
+</head>
+
+<body class="bg-slate-50">
+  <main>
+    <div class="grid px-5 py-8 gap-8 
+                grid-cols-1
+                grid-rows-[300px_200px_245px_480px_340px_200px_240px_450px]
+                sm:grid-rows-[350px_220px_245px_550px_400px_200px_240px_500px]
+                md:grid-cols-2
+                md:grid-rows-[450px_200px_550px_400px_450px]
+                lg:grid-cols-4
+                lg:grid-rows-[245px_245px_245px_245px]
+                lg:px-20">
+
+      <div class="purple-500 py-8 px-12 rounded-md text-center sm:px-36
+                  md:col-span-2
+                  lg:order-2
+                  lg:col-span-2
+                  lg:row-span-2
+                  lg:px-12
+                  lg:pt-28">
+        <p class="text-white text-4xl 
+                  sm:text-5xl
+                  md:text-7xl
+                  lg:text-6xl">Social Media <span class="txt-yellow-500">10x</span> Faster with AI</p>
+        <img class="w-48 block m-auto mt-10 mb-5 lg:w-52" src="./assets/images/illustration-five-stars.webp" alt="">
+        <p class="text-slate-50 text-xl">Over 4,000 5-star reviews</p>
+      </div>
+
+
+      <div class="bg-white p-3 rounded-md lg:order-5 lg:row-span-1 lg:overflow-hidden">
+        <img class="mb-6 lg:max-w-none lg:w-96" src="./assets/images/illustration-multiple-platforms.webp" alt="">
+        <p class="black-color text-2xl font-semibold lg:text-3xl">Manage multiple accounts and platforms.</p>
+      </div>
+
+
+      <div class="yellow-500 p-3 rounded-md 
+                  md:p-px md:overflow-hidden
+                  lg:order-6 lg:row-span-1">
+        <p class="black-color text-2xl font-semibold mb-6
+                  sm:mt-8 sm:mx-10
+                  md:text-2xl
+                  md:mt-3
+                  lg:mx-5
+                  lg:text-3xl
+                  lg:mb-2">Maintain a consistent posting schedule.</p>
+        <img class="w-48 sm:mx-10" src="./assets/images/illustration-consistent-schedule.webp" alt="">
+      </div>
+
+
+      <div class="purple-100 py-3 px-5 rounded-md text-center
+                  md:col-span-2
+                  lg:order-3
+                  lg:col-span-1
+                  lg:row-span-3
+                  lg:overflow-hidden
+                  lg:text-start
+                  lg:pt-28">
+        <p class="text-2xl font-semibold mb-6 mt-5 black-color lg:text-4xl">Schedule to social media.</p>
+        <img class="block m-auto sm:w-4/6 md:w-1/2 lg:max-w-none lg:w-96"
+          src="./assets/images/illustration-schedule-posts.webp" alt="">
+        <p class="text-l mt-5 black-color sm:text-2xl lg:text-lg lg:mt-10">Optimize post timings to publish content at
+          the perfect time for your audience.</p>
+      </div>
+
+
+
+      <div class="purple-500 p-8 rounded-md text-center 
+                  lg:order-8 lg:col-span-2 lg:flex lg:p-4 lg:gap-5">
+        <img class="w-52 block m-auto sm:w-72 lg:w-48" src="./assets//images/illustration-grow-followers.webp" alt="">
+        <p class="mt-10 text-white text-2xl font-medium lg:text-start lg:text-4xl">Grow followers with non-stop content.
+        </p>
+      </div>
+
+
+
+      <div class="bg-white p-3 rounded-md lg:order-7">
+        <p><span class="block text-5xl font-medium black-color sm:text-6xl md:text-7xl lg:text-5xl">>56%</span><span
+            class="block my-5 font-semibold text-l black-color md:text-2xl lg:text-xl">faster audience
+            growth</span></p>
+        <img class="w-40" src="./assets/images/illustration-audience-growth.webp" alt="">
+      </div>
+
+
+      <div class="bg-rose-50 p-7 rounded-md lg:order-first lg:row-span-2 lg:pt-28">
+        <p class="text-2xl font-semibold black-color sm:text-3xl lg:text-4xl">Create and schedule content <span
+            class="text-purple-600 DM-italic">quicker.</span></p>
+        <img class="w-40 mt-7" src="./assets/images/illustration-create-post.webp" alt="">
+      </div>
+
+
+      <div class="yellow-500 py-6 px-7 rounded-md lg:order-4 lg:row-span-2">
+        <p class="text-2xl font-semibold black-color sm:text-3xl lg:text-4xl lg:mb-15">Write your content using AI.</p>
+        <img class="mt-8 sm:w-4/6 md:w-72 lg:h-60 lg:mt-16" src="./assets/images/illustration-ai-content.webp" alt="">
+      </div>
+
+
+    </div>
+  </main>
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+</body>
+
+</html>
